@@ -70,6 +70,25 @@ let strs = [ 1; 2; 3 ]
 let strs2 = mul10142 strs
 System.Console.WriteLine(strs2);;
 
+let people = [("ass bbb", 24); ("ccc ddd", 30)]
+
+let f7 (x,y) = x + y
+let ans7 = f7 (10,20)
+System.Console.WriteLine(ans7);;
+
+let f8 x = (x, x*3)
+let g8 (x,y) = x*y
+let ans8 = g8(f8 10)
+System.Console.WriteLine(ans8);;
+let ans9 = f8 10
+let ans10 = g8 ans9
+System.Console.WriteLine(ans10);;
+
+let person11 = ("h", 24)
+let xs11 = ["hhh";"ppp"]
+let ps11 = [("hhs", 24); ("piie", 20)]
+System.Console.WriteLine(ps11);;
+
 
 
 [<EntryPoint>]
